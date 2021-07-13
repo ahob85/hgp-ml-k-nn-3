@@ -58,20 +58,7 @@ function draw() {
 }
 
 function drawBall() {
-  fill(0);
-  ellipse(ballX, ballY, 36);
-  let labelString = textP.html().toLowerCase();
-  if(labelString.includes("up")) {
-    ballY -= ballSpeed;
-  } else if(labelString.includes("down")) {
-    ballY += ballSpeed;
-  } else if(labelString.includes("left")) {
-    ballX -= ballSpeed;
-  } else if(labelString.includes("right")) {
-    ballX += ballSpeed;
-  }
-  ballX = constrain(ballX, 16, width - 16);
-  ballY = constrain(ballY, 16, height - 16);
+
 }
 
 function buildButtons() {
